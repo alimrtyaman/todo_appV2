@@ -33,5 +33,7 @@ public class Task {
     @Column(name = "complteted_at")
     private LocalDateTime completedAt;
 
-
+    @ManyToOne()
+    @JoinColumn(name = "user_id")
+    private User user;
 }
